@@ -1,8 +1,28 @@
-# React + Vite
+# Exporting Examples
+- either way is totally valid, but if you have more than ONE function you're exporting you can't use `export default function name()`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```js
+import React from 'react'
 
-Currently, two official plugins are available:
+ function TodoContainer() {
+  return (
+    <div>TodoContainer</div>
+  )
+}
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+export default TodoContainer
+
+//or
+
+import React from 'react'
+
+export default function TodoContainer() {
+  return (
+    <div>TodoContainer</div>
+  )
+}
+```
+
+## Commonly used JS higher order array methods 
+- `.map()` - returns an array and does some operation or functionality for every item on the array, takes in a callback as the argument
+- `.filter()` for like removing things from state
