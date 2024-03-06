@@ -26,3 +26,18 @@ export default function TodoContainer() {
 ## Commonly used JS higher order array methods 
 - `.map()` - returns an array and does some operation or functionality for every item on the array, takes in a callback as the argument
 - `.filter()` for like removing things from state
+
+
+## Props
+
+```js
+const fakeData = [
+	{ id: 1, task: "task-1" },
+	{ id: 2, task: "task-2" },
+	{ id: 3, task: "task-3" },
+	{ id: 4, task: "task-4" },
+];
+
+<TodoCard todo={fakeData[0]} />
+```
+- the prop is named the todo, and the value is the first object in the fakeData array
