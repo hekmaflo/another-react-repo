@@ -37,13 +37,13 @@ function App() {
 		<>
 			<main>
 				<div>
-					<h1>Counter</h1>
+					<h1 className="text-4xl">Counter</h1>
 					{count}
 					<button onClick={increaseCount}>Increment</button>
 				</div>
 				<h2>ToDo List</h2>
 				<TodoContainer />
-				<h3>ToD list with props example- this dont' scale</h3>
+				<h3>ToD list with props example- this don&apos;t scale</h3>
 				<TodoCard todo={fakeData[0]} />
 				<TodoCard todo={fakeData[1]} />
 				<TodoCard todo={fakeData[2]} />
