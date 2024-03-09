@@ -4,7 +4,7 @@ export default function TodoCard ({ todo }){
 
  // console.log(todo); when it doubt log it out
   return (
-    <div>
+    <div className="py-2">
       <p>{todo.id}: {todo.task}</p>
     </div>
   )

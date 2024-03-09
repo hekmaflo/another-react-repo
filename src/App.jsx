@@ -31,23 +31,26 @@ function App() {
 		setCount(count + 1) //hey this is a setState func, im going to compare the last => to the current and rerender if it's different
 	
 	}
-	console.log(count);
+
 
 	return (
 		<>
-			<main>
-				<div>
+			<main className="max-w-2xl mx-auto my-2">
+				<div className="my-2">
 					<h1 className="text-4xl">Counter</h1>
 					{count}
 					<button onClick={increaseCount}>Increment</button>
 				</div>
-				<h2>ToDo List</h2>
+				<h2 className="text-xl font-bold">ToDo List</h2>
 				<TodoContainer />
-				<h3>ToD list with props example- this don&apos;t scale</h3>
+				<section className="text-center mt-4">
+
+				<h3 className="text-lg font-semibold">ToD list with props example- this don&apos;t scale</h3>
 				<TodoCard todo={fakeData[0]} />
 				<TodoCard todo={fakeData[1]} />
 				<TodoCard todo={fakeData[2]} />
 				<TodoCard todo={fakeData[3]} />
+				</section>
 			</main>
 		</>
 	);
